@@ -99,10 +99,11 @@ train_dataloader = dict(
     type=dataset_type,
     data_root=data_root,
     data_mode=data_mode,
-    ann_file='/home/yinzi/workspace/babyview_pose/mmpose/output/result.json',
+    ann_file='/home/yinzi/yinzi_home/workspace/babyview_pose/mmpose_local/output/result.json',
     data_prefix=dict(img='images/'),
     pipeline=train_pipeline,
 ))
+
 val_dataloader = dict(
     batch_size=64,
     num_workers=10,
@@ -114,7 +115,7 @@ val_dataloader = dict(
     test_mode=True,
     data_root=data_root,
     data_mode=data_mode,
-    ann_file='/home/yinzi/workspace/babyview_pose/mmpose/output/result.json',
+    ann_file='/home/yinzi/yinzi_home/workspace/babyview_pose/mmpose_local/output/result.json',
     data_prefix=dict(img='images/'),
     pipeline=test_pipeline,
 ))

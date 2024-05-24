@@ -1,0 +1,2 @@
+cd mmpose
+python tools/test.py configs/body_2d_keypoint/rtmo/coco/rtmo-l_16xb16-600e_babyview_coco-640x640.py https://download.openmmlab.com/mmpose/v1/projects/rtmo/rtmo-l_16xb16-600e_coco-640x640-516a421f_20231211.pth
