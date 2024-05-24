@@ -51,7 +51,7 @@ param_scheduler = [
 
 # data
 input_size = (640, 640)
-metafile = '..configs/_base_/datasets/coco.py'
+metafile = '../mmpose/configs/_base_/datasets/coco.py'
 codec = dict(type='YOLOXPoseAnnotationProcessor', input_size=input_size)
 
 train_pipeline_stage1 = [
@@ -118,7 +118,7 @@ train_dataloader = dict(
     type=dataset_type,
     data_root=data_root,
     data_mode=data_mode,
-    ann_file='/home/yinzi/yinzi_home/workspace/babyview_pose/mmpose_local/output/result.json',
+    ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
     data_prefix=dict(img='images/'),
     pipeline=train_pipeline_stage1,
 ))
@@ -144,7 +144,7 @@ val_dataloader = dict(
     test_mode=True,
     data_root=data_root,
     data_mode=data_mode,
-    ann_file='/home/yinzi/yinzi_home/workspace/babyview_pose/mmpose_local/output/result.json',
+    ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
     data_prefix=dict(img='images/'),
     pipeline=val_pipeline,
 ))
@@ -153,9 +153,9 @@ test_dataloader = val_dataloader
 # evaluators
 val_evaluator = dict(
     type='CocoMetric',
-    ann_file='/home/yinzi/yinzi_home/workspace/babyview_pose/mmpose_local/output/result.json',
+    # ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
     # score_mode='bbox',
-    nms_mode='none',
+    # nms_mode='none',
 )
 test_evaluator = val_evaluator
 

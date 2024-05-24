@@ -221,6 +221,12 @@ class LSConverter:
                     else:
                         annotations[-1]['keypoints'].extend(current_kp)
                         kp_num += kp_num_change
+                
+                if i == len(item['annotations'][0]['result']) - 1:
+                    # last one should be rectanglelabels
+                    assert 'rectanglelabels' == label['type'] or 'labels' == label['type']
+                    
+
 
         with io.open(output_json, mode='w', encoding='utf8') as fout:
             json.dump(

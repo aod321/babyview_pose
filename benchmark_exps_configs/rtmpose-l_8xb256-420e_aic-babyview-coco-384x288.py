@@ -174,46 +174,10 @@ train_pipeline_stage2 = [
     dict(type='PackPoseInputs')
 ]
 
-# train datasets
-dataset_coco = dict(
-    type='RepeatDataset',
-    dataset=dict(
-        type=dataset_type,
-        data_root=data_root,
-        data_mode=data_mode,
-        ann_file='coco/annotations/person_keypoints_train2017.json',
-        data_prefix=dict(img='detection/coco/train2017/'),
-        pipeline=[],
-    ),
-    times=3)
-
-dataset_aic = dict(
-    type='AicDataset',
-    data_root=data_root,
-    data_mode=data_mode,
-    ann_file='aic/annotations/aic_train.json',
-    data_prefix=dict(img='pose/ai_challenge/ai_challenger_keypoint'
-                     '_train_20170902/keypoint_train_images_20170902/'),
-    pipeline=[
-        dict(
-            type='KeypointConverter',
-            num_keypoints=17,
-            mapping=[
-                (0, 6),
-                (1, 8),
-                (2, 10),
-                (3, 5),
-                (4, 7),
-                (5, 9),
-                (6, 12),
-                (7, 14),
-                (8, 16),
-                (9, 11),
-                (10, 13),
-                (11, 15),
-            ])
-    ],
-)
+# base dataset settings
+dataset_type = 'CocoDataset'
+data_mode = 'topdown'
+data_root = "/home/yinzi/workspace/babyview_pose/mmpose/"
 
 # data loaders
 train_dataloader = dict(
@@ -222,12 +186,15 @@ train_dataloader = dict(
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     dataset=dict(
-        type='CombinedDataset',
-        metainfo=dict(from_file='configs/_base_/datasets/coco.py'),
-        datasets=[dataset_coco, dataset_aic],
-        pipeline=train_pipeline,
-        test_mode=False,
-    ))
+    type=dataset_type,
+    data_root=data_root,
+    data_mode=data_mode,
+    ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
+    data_prefix=dict(img='images/'),
+    pipeline=train_pipeline,
+))
+
+
 val_dataloader = dict(
     batch_size=64,
     num_workers=10,
@@ -235,16 +202,14 @@ val_dataloader = dict(
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False, round_up=False),
     dataset=dict(
-        type=dataset_type,
-        data_root=data_root,
-        data_mode=data_mode,
-        ann_file='coco/annotations/person_keypoints_val2017.json',
-        # bbox_file='data/coco/person_detection_results/'
-        # 'COCO_val2017_detections_AP_H_56_person.json',
-        data_prefix=dict(img='detection/coco/val2017/'),
-        test_mode=True,
-        pipeline=val_pipeline,
-    ))
+    type=dataset_type,
+    test_mode=True,
+    data_root=data_root,
+    data_mode=data_mode,
+    ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
+    data_prefix=dict(img='images/'),
+    pipeline=val_pipeline,
+))
 test_dataloader = val_dataloader
 
 # hooks
@@ -267,5 +232,6 @@ custom_hooks = [
 # evaluators
 val_evaluator = dict(
     type='CocoMetric',
-    ann_file=data_root + 'coco/annotations/person_keypoints_val2017.json')
+    # ann_file=data_root + 'coco/annotations/person_keypoints_val2017.json'
+    )
 test_evaluator = val_evaluator

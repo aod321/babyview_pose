@@ -88,9 +88,9 @@ model = dict(
     ))
 
 # base dataset settings
-data_root = 'data/coco/'
 dataset_type = 'CocoDataset'
 data_mode = 'topdown'
+data_root = "/home/yinzi/workspace/babyview_pose/mmpose/"
 
 # pipelines
 train_pipeline = [
@@ -109,42 +109,40 @@ val_pipeline = [
     dict(type='TopdownAffine', input_size=codec['input_size'], use_udp=True),
     dict(type='PackPoseInputs')
 ]
-
 # data loaders
 train_dataloader = dict(
-    batch_size=64,
-    num_workers=4,
+    batch_size=256,
+    num_workers=10,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     dataset=dict(
-        type=dataset_type,
-        data_root=data_root,
-        data_mode=data_mode,
-        ann_file='annotations/person_keypoints_train2017.json',
-        data_prefix=dict(img='train2017/'),
-        pipeline=train_pipeline,
-    ))
+    type=dataset_type,
+    data_root=data_root,
+    data_mode=data_mode,
+    ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
+    data_prefix=dict(img='images/'),
+    pipeline=train_pipeline,
+))
 val_dataloader = dict(
-    batch_size=32,
-    num_workers=4,
+    batch_size=64,
+    num_workers=10,
     persistent_workers=True,
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False, round_up=False),
     dataset=dict(
-        type=dataset_type,
-        data_root=data_root,
-        data_mode=data_mode,
-        ann_file='annotations/person_keypoints_val2017.json',
-        bbox_file='data/coco/person_detection_results/'
-        'COCO_val2017_detections_AP_H_56_person.json',
-        data_prefix=dict(img='val2017/'),
-        test_mode=True,
-        pipeline=val_pipeline,
-    ))
+    type=dataset_type,
+    test_mode=True,
+    data_root=data_root,
+    data_mode=data_mode,
+    ann_file='/home/yinzi/workspace/babyview_pose/babyview_pose_val_coco_format.json',
+    data_prefix=dict(img='images/'),
+    pipeline=val_pipeline,
+))
 test_dataloader = val_dataloader
 
 # evaluators
 val_evaluator = dict(
     type='CocoMetric',
-    ann_file=data_root + 'annotations/person_keypoints_val2017.json')
+    # ann_file=data_root + 'annotations/person_keypoints_val2017.json'
+    )
 test_evaluator = val_evaluator

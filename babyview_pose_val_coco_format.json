@@ -3742,21 +3742,6 @@
     },
     {
       "id": 46,
-      "image_id": 40,
-      "category_id": 1,
-      "keypoints": [
-        1990.521327014218,
-        784.8341232227488,
-        2,
-        1621.9905213270142,
-        304.8341232227488,
-        2
-      ],
-      "ignore": 0,
-      "iscrowd": 0
-    },
-    {
-      "id": 47,
       "image_id": 41,
       "category_id": 1,
       "keypoints": [
@@ -3824,7 +3809,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 48,
+      "id": 47,
       "image_id": 42,
       "category_id": 1,
       "keypoints": [
@@ -3892,7 +3877,7 @@
       "num_keypoints": 9
     },
     {
-      "id": 49,
+      "id": 48,
       "image_id": 43,
       "category_id": 1,
       "keypoints": [
@@ -3960,7 +3945,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 50,
+      "id": 49,
       "image_id": 44,
       "category_id": 1,
       "keypoints": [
@@ -4028,7 +4013,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 51,
+      "id": 50,
       "image_id": 45,
       "category_id": 1,
       "keypoints": [
@@ -4096,7 +4081,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 52,
+      "id": 51,
       "image_id": 46,
       "category_id": 1,
       "keypoints": [
@@ -4164,7 +4149,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 53,
+      "id": 52,
       "image_id": 47,
       "category_id": 1,
       "keypoints": [
@@ -4232,7 +4217,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 54,
+      "id": 53,
       "image_id": 47,
       "category_id": 1,
       "keypoints": [
@@ -4300,7 +4285,7 @@
       "num_keypoints": 5
     },
     {
-      "id": 55,
+      "id": 54,
       "image_id": 48,
       "category_id": 1,
       "keypoints": [
@@ -4368,7 +4353,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 56,
+      "id": 55,
       "image_id": 49,
       "category_id": 1,
       "keypoints": [
@@ -4436,7 +4421,7 @@
       "num_keypoints": 3
     },
     {
-      "id": 57,
+      "id": 56,
       "image_id": 50,
       "category_id": 1,
       "keypoints": [
@@ -4504,7 +4489,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 58,
+      "id": 57,
       "image_id": 51,
       "category_id": 1,
       "keypoints": [
@@ -4572,7 +4557,7 @@
       "num_keypoints": 11
     },
     {
-      "id": 59,
+      "id": 58,
       "image_id": 52,
       "category_id": 1,
       "keypoints": [
@@ -4640,7 +4625,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 60,
+      "id": 59,
       "image_id": 52,
       "category_id": 1,
       "keypoints": [
@@ -4708,7 +4693,7 @@
       "num_keypoints": 6
     },
     {
-      "id": 61,
+      "id": 60,
       "image_id": 53,
       "category_id": 1,
       "keypoints": [
@@ -4776,7 +4761,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 62,
+      "id": 61,
       "image_id": 54,
       "category_id": 1,
       "keypoints": [
@@ -4844,7 +4829,7 @@
       "num_keypoints": 11
     },
     {
-      "id": 63,
+      "id": 62,
       "image_id": 55,
       "category_id": 1,
       "keypoints": [
@@ -4912,7 +4897,7 @@
       "num_keypoints": 11
     },
     {
-      "id": 64,
+      "id": 63,
       "image_id": 56,
       "category_id": 1,
       "keypoints": [
@@ -4980,7 +4965,7 @@
       "num_keypoints": 13
     },
     {
-      "id": 65,
+      "id": 64,
       "image_id": 57,
       "category_id": 1,
       "keypoints": [
@@ -5048,7 +5033,7 @@
       "num_keypoints": 10
     },
     {
-      "id": 66,
+      "id": 65,
       "image_id": 58,
       "category_id": 1,
       "keypoints": [
@@ -5116,7 +5101,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 67,
+      "id": 66,
       "image_id": 59,
       "category_id": 1,
       "keypoints": [
@@ -5184,7 +5169,7 @@
       "num_keypoints": 15
     },
     {
-      "id": 68,
+      "id": 67,
       "image_id": 60,
       "category_id": 1,
       "keypoints": [
@@ -5252,7 +5237,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 69,
+      "id": 68,
       "image_id": 61,
       "category_id": 1,
       "keypoints": [
@@ -5320,7 +5305,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 70,
+      "id": 69,
       "image_id": 62,
       "category_id": 1,
       "keypoints": [
@@ -5388,7 +5373,7 @@
       "num_keypoints": 5
     },
     {
-      "id": 71,
+      "id": 70,
       "image_id": 63,
       "category_id": 1,
       "keypoints": [
@@ -5456,7 +5441,7 @@
       "num_keypoints": 11
     },
     {
-      "id": 72,
+      "id": 71,
       "image_id": 64,
       "category_id": 1,
       "keypoints": [
@@ -5524,7 +5509,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 73,
+      "id": 72,
       "image_id": 65,
       "category_id": 1,
       "keypoints": [
@@ -5592,7 +5577,7 @@
       "num_keypoints": 9
     },
     {
-      "id": 74,
+      "id": 73,
       "image_id": 66,
       "category_id": 1,
       "keypoints": [
@@ -5660,7 +5645,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 75,
+      "id": 74,
       "image_id": 67,
       "category_id": 1,
       "keypoints": [
@@ -5728,7 +5713,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 76,
+      "id": 75,
       "image_id": 68,
       "category_id": 1,
       "keypoints": [
@@ -5796,7 +5781,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 77,
+      "id": 76,
       "image_id": 69,
       "category_id": 1,
       "keypoints": [
@@ -5864,7 +5849,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 78,
+      "id": 77,
       "image_id": 70,
       "category_id": 1,
       "keypoints": [
@@ -5932,7 +5917,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 79,
+      "id": 78,
       "image_id": 71,
       "category_id": 1,
       "keypoints": [
@@ -6000,7 +5985,7 @@
       "num_keypoints": 2
     },
     {
-      "id": 80,
+      "id": 79,
       "image_id": 72,
       "category_id": 1,
       "keypoints": [
@@ -6068,7 +6053,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 81,
+      "id": 80,
       "image_id": 73,
       "category_id": 1,
       "keypoints": [
@@ -6136,7 +6121,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 82,
+      "id": 81,
       "image_id": 74,
       "category_id": 1,
       "keypoints": [
@@ -6204,7 +6189,7 @@
       "num_keypoints": 2
     },
     {
-      "id": 83,
+      "id": 82,
       "image_id": 75,
       "category_id": 1,
       "keypoints": [
@@ -6272,7 +6257,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 84,
+      "id": 83,
       "image_id": 76,
       "category_id": 1,
       "keypoints": [
@@ -6340,7 +6325,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 85,
+      "id": 84,
       "image_id": 77,
       "category_id": 1,
       "keypoints": [
@@ -6408,7 +6393,7 @@
       "num_keypoints": 3
     },
     {
-      "id": 86,
+      "id": 85,
       "image_id": 78,
       "category_id": 1,
       "keypoints": [
@@ -6476,7 +6461,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 87,
+      "id": 86,
       "image_id": 79,
       "category_id": 1,
       "keypoints": [
@@ -6544,7 +6529,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 88,
+      "id": 87,
       "image_id": 80,
       "category_id": 1,
       "keypoints": [
@@ -6612,7 +6597,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 89,
+      "id": 88,
       "image_id": 81,
       "category_id": 1,
       "keypoints": [
@@ -6680,7 +6665,7 @@
       "num_keypoints": 10
     },
     {
-      "id": 90,
+      "id": 89,
       "image_id": 82,
       "category_id": 1,
       "keypoints": [
@@ -6748,7 +6733,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 91,
+      "id": 90,
       "image_id": 83,
       "category_id": 1,
       "keypoints": [
@@ -6816,7 +6801,7 @@
       "num_keypoints": 14
     },
     {
-      "id": 92,
+      "id": 91,
       "image_id": 84,
       "category_id": 1,
       "keypoints": [
@@ -6884,7 +6869,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 93,
+      "id": 92,
       "image_id": 85,
       "category_id": 1,
       "keypoints": [
@@ -6952,7 +6937,7 @@
       "num_keypoints": 13
     },
     {
-      "id": 94,
+      "id": 93,
       "image_id": 86,
       "category_id": 1,
       "keypoints": [
@@ -7020,7 +7005,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 95,
+      "id": 94,
       "image_id": 87,
       "category_id": 1,
       "keypoints": [
@@ -7088,7 +7073,7 @@
       "num_keypoints": 13
     },
     {
-      "id": 96,
+      "id": 95,
       "image_id": 88,
       "category_id": 1,
       "keypoints": [
@@ -7156,7 +7141,7 @@
       "num_keypoints": 2
     },
     {
-      "id": 97,
+      "id": 96,
       "image_id": 89,
       "category_id": 1,
       "keypoints": [
@@ -7224,7 +7209,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 98,
+      "id": 97,
       "image_id": 89,
       "category_id": 1,
       "keypoints": [
@@ -7292,7 +7277,7 @@
       "num_keypoints": 2
     },
     {
-      "id": 99,
+      "id": 98,
       "image_id": 90,
       "category_id": 1,
       "keypoints": [
@@ -7360,7 +7345,7 @@
       "num_keypoints": 9
     },
     {
-      "id": 100,
+      "id": 99,
       "image_id": 91,
       "category_id": 1,
       "keypoints": [
@@ -7428,7 +7413,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 101,
+      "id": 100,
       "image_id": 91,
       "category_id": 1,
       "keypoints": [
@@ -7496,7 +7481,7 @@
       "num_keypoints": 1
     },
     {
-      "id": 102,
+      "id": 101,
       "image_id": 92,
       "category_id": 1,
       "keypoints": [
@@ -7564,7 +7549,7 @@
       "num_keypoints": 13
     },
     {
-      "id": 103,
+      "id": 102,
       "image_id": 92,
       "category_id": 1,
       "keypoints": [
@@ -7632,7 +7617,7 @@
       "num_keypoints": 4
     },
     {
-      "id": 104,
+      "id": 103,
       "image_id": 93,
       "category_id": 1,
       "keypoints": [
@@ -7700,7 +7685,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 105,
+      "id": 104,
       "image_id": 94,
       "category_id": 1,
       "keypoints": [
@@ -7768,7 +7753,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 106,
+      "id": 105,
       "image_id": 95,
       "category_id": 1,
       "keypoints": [
@@ -7836,7 +7821,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 107,
+      "id": 106,
       "image_id": 96,
       "category_id": 1,
       "keypoints": [
@@ -7904,7 +7889,7 @@
       "num_keypoints": 6
     },
     {
-      "id": 108,
+      "id": 107,
       "image_id": 97,
       "category_id": 1,
       "keypoints": [
@@ -7972,7 +7957,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 109,
+      "id": 108,
       "image_id": 98,
       "category_id": 1,
       "keypoints": [
@@ -8040,7 +8025,7 @@
       "num_keypoints": 0
     },
     {
-      "id": 110,
+      "id": 109,
       "image_id": 98,
       "category_id": 1,
       "keypoints": [
@@ -8108,7 +8093,7 @@
       "num_keypoints": 3
     },
     {
-      "id": 111,
+      "id": 110,
       "image_id": 99,
       "category_id": 1,
       "keypoints": [
@@ -8182,6 +8167,6 @@
     "description": "",
     "contributor": "Label Studio",
     "url": "",
-    "date_created": "2024-05-23 17:00:10.169579"
+    "date_created": "2024-05-23 19:29:52.612960"
   }
 }
